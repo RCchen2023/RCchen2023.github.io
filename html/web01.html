@@ -10,7 +10,7 @@
     <main>
     <div class="resume">
         <div class="content">
-            <h1>Mei-Feng Chen</h1>
+            <h1>Mei-Feng Chen (陳美鳳)</h1>
             <section>
                 <p class="section-p">擁有超過8年的電商美術編輯經驗，專精於塑造商品形象。我的工作範疇涵蓋商品攝影、視覺編排、影片拍攝與精修，以及銷售平台操作和管理，甚至活動企劃和客服接觸等多元工作。操作過多個B2B平台，如：蝦皮、樂天、Yahoo超級商城等...，也曾接觸過品牌自架網站的後台系統，相信如果要架設電商網站，對於前後台的系統邏輯，會更加容易代入一些相關經驗。</p>
             </section>
@@ -19,22 +19,145 @@
             <img id="head" src="/pic/headshot.png" alt="headshot">
         </div>
     </div>
+    <div class="hr-1">
     <hr>
+    </div>
     <div class="contact">
-        <p><img class="cap" src="/pic/graduationcap.png" alt="cap"></p>
-        <p><img class="location" src="/pic/location.png" alt="location"></p>
-        <p><img class="mail" src="/pic/mail.png" alt="mail"></p>
+        <p class="img-p"><img class="cap" src="/pic/graduationcap.png" alt="cap">嶺東科技大學 視覺傳達設計系</p>
+        <p class="img-p"><img class="location" src="/pic/location.png" alt="location">桃園市 八德區</p>
+        <p class="img-p"><img class="mail" src="/pic/mail.png" alt="mail">g016122_rina@icloud.com</p>
+        <p class="img-p"><img class="phone" src="/pic/phone.png" alt="phone">0928 562 073</p>
     </div>
     </main>
     <hr>
     <div class="cv">
+        <!--下拉選單-->
         <div class="work">
-            <ol>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ol>
+            <h1 class="cv-h1">工作經歷 <small>[*點擊項目標題查看更多資訊]</small></h1>
+            <div class="item-1" onclick="toggleDropdown(1)">
+                <p>2018年9月~至今 喜鵲有限公司 美術編輯</p>
+                <div id="dropdown-content-1" class="dropdown-content">
+                    <h2 class="jd">喜鵲有限公司 美術編輯</h2>
+                    <p class="jdp1">　在此公司進行商品形象的重新塑造，另商品有效與其他競爭對手做出區別，有時經常需要因應消費者習慣的快速變化，將說明圖的內容，介紹順序重新排列、攝影、或重想文案等。</p>
+                    <p><ul>
+                        <li>商品攝影：商品形象照拍攝。</li>
+                        <li>說明圖編排：商品功能、用途、尺寸標示等圖文呈現。</li>
+                        <li>影片剪輯：商品功能簡短呈現，使客戶快速理解商品用途、組裝方式。</li>
+                        <li>後台操作：商品上下架、活動建立、商店版面佈置、客服等...。</li>
+                    </ul></p>
+                </div>
+            </div>
+
+            <div class="item-2" id="second-item" onclick="toggleDropdown(2)">
+                <p>2016年5月~2018年8月 宇越國際有限公司 美術編輯</p>
+                <div id="dropdown-content-2" class="dropdown-content">
+                    <h2 class="jd">宇越國際有限公司 美術編輯</h2>
+                    <p><ul>
+                        <li>商品攝影</li>
+                        <li>說明圖編排</li>
+                        <li>官網後台上下架操作</li>
+                        <li>社群經營</li>
+                        <li>雜誌稿編排</li>
+                        <li>EDM</li>
+                    </ul></p>
+                </div>
+            </div>
+
+            <div class="item-3" id="third-item" onclick="toggleDropdown(3)">
+                <p>2015年 元術廣告社 設計人員</p>
+                <div id="dropdown-content-3" class="dropdown-content">
+                    <h2 class="jd">元術廣告社 設計人員</h2>
+                    <p><ul>
+                        <li>名片</li>
+                        <li>海報</li>
+                        <li>大帆布廣告</li>
+                        <li>宣傳招牌</li>
+                        <li>建案視覺形象設計</li>
+                        <li>編排</li>
+                    </ul></p>
+                </div>
+            </div>
+
+            <div class="item-4" id="fourth-item"  onclick="toggleDropdown(4)">
+                <p>2014年7~8月 宏州磁磚觀光工廠 實習生</p>
+                <div id="dropdown-content-4" class="dropdown-content">
+                    <h2 class="jd">宏州磁磚觀光工廠 實習生</h2>
+                    <p><ul>
+                        <li>觀光工廠導覽</li>
+                        <li>導覽攝影紀錄</li>
+                        <li>文宣商品設計</li>
+                        <li>磁磚圖案設計</li>
+                        <li>官方貼圖設計</li>
+                        <li>行銷企劃發想</li>
+                    </ul></p>
+                </div>
+            </div>
+            <script src="/js/work.js"></script>
+        </div>
+        <hr>
+        <div class="school">
+            <h1 class="cv-h1">在校經歷</h1>
+        <table>
+            <thead>
+            <tr>
+                <th colspan="3"></th>
+            </tr>
+            </thead>
+            <tbody class="tbody">
+                <tr>
+                    <td class="t0">1</td>
+                    <td class="t1">資訊月應用競賽[團體組] 全國&中區</td>
+                    <td class="t2">第一名</td>
+                </tr>
+                <tr>
+                    <td class="t0"> </td>
+                    <td class="t1">資訊月應用競賽[個人組] 全國&中區</td>
+                    <td class="t2">優勝</td>
+                </tr>
+                <tr>
+                    <td class="t0"> </td>
+                    <td class="t1">嶺東科技大學第十五屆畢業專題</td>
+                    <td class="t2">展場幹部</td>
+                </tr>
+                <tr>
+                    <td class="t0"> </td>
+                    <td class="t1">嶺東科技大學校內專題製作</td>
+                    <td class="t2">第六名</td>
+                </tr>
+                <tr>
+                    <td class="t0"> </td>
+                    <td class="t1">A+新秀設計競賽 視覺傳達設計類</td>
+                    <td class="t2">入圍</td>
+                </tr>
+                <tr>
+                    <td class="t0"> </td>
+                    <td class="t1">國家檢定考試「乙級印前製程」</td>
+                    <td class="t2">考場工作人員</td>
+                </tr>
+                <tr>
+                    <td class="t0"> </td>
+                    <td class="t1">小林章「字型是完美設計」講座</td>
+                    <td class="t2">活動工作人員</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+        <hr>
+        <div class="skill"><h1 class="cv-h1">技能</h1>
+        <div class="skillmenu">
+            <div class="photoshop"><img src="https://www.adobe.com/content/dam/shared/images/product-icons/svg/photoshop.svg" alt="photoshop"></div>
+            <div class="illustrator"><img src="https://www.adobe.com/content/dam/shared/images/product-icons/svg/illustrator.svg" alt="illustrator"></div>
+            <div class="lightroom"><img src="https://www.adobe.com/content/dam/shared/images/product-icons/svg/lightroom.svg" alt="lightroom"></div>
+            <div class="Premiere"><img src="https://www.adobe.com/content/dam/shared/images/product-icons/svg/premiere.svg" alt="Premiere"></div>
+            <div class="AfterEffects"><img src="https://www.adobe.com/content/dam/shared/images/product-icons/svg/after-effects.svg" alt="AfterEffects"></div>
+        </div>
+        <div class="skillfont">
+            <div class="sf1">Photoshop</div>
+            <div class="sf2">Illustrator</div>
+            <div class="sf3">Lightroom</div>
+            <div class="sf4">Premiere</div>
+            <div class="sf5">AfterEffects</div>
+        </div>
         </div>
     </div>
 </body>

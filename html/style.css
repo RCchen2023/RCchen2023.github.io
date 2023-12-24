@@ -6,15 +6,20 @@ body{
 
 main{
     background-color: white;
-    padding: 10%;
+    padding: 8%;
 }
 
+h1{
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
 /*resume簡介區*/
 .resume{
     display: flex;
     align-items: center;/*水平置中*/
     justify-content: center; /*垂直置中*/
+    padding-right: 3em;
 }
 
 .content{
@@ -29,12 +34,11 @@ main{
 }
 
 #head{
+    max-width: 100%; /* 最大寬度不超過容器寬度 */
+    max-height: 100%; /* 最大高度不超過容器高度 */
     width: 250px;
-}
-
-h1{
-    font-size: large;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: auto;
+    object-fit: contain; /* 保持圖片比例，放入容器內，不拉伸 */
 }
 
 .section-p{
@@ -44,32 +48,162 @@ h1{
     text-align:justify;
 }
 
-/*聯絡方式*/
-.contact{
-    display: flex;
-    flex-direction: column;
-    padding: 3em;
-    background-color: aqua;
+/*分隔線-1*/
+.hr-1{
+    flex: 1;
+    padding: 1em 2.5em 1em 2.5em;
 }
 
-.cap,.location,.mail{
+/*聯絡方式*/
+.contact {
+    padding-top: 2%; /*距離頂部*/
+    display: flex;
+    flex-direction: column; /*垂直對齊*/
+}
+
+.img-p{
+    font-size: 14px;
+    font-family:sans-serif,Verdana, Geneva, Tahoma;
+    margin: 2px;
+    height: 30px; /*文字內容高度*/
+    padding-left: 3em; /*距離左邊3字元*/
+}
+
+.cap,.location,.phone{
+    vertical-align: text-bottom;
+    padding-right: 10px;
     width: 20px;
     aspect-ratio: 1 / 1; /* 設定長寬比 */
 }
 
-.cap{
-    background-color: rosybrown;
-}
-
-.location{
-    background-color: cadetblue;
-}
-
 .mail{
-    background-color: orange;
+    width: 20px;
+    height: 20px;
+    padding-right: 10px;
+    margin-top: -1px; /*矯正圖片與文字不對齊*/
+    vertical-align: text-top;/*向上對齊*/
 }
 
 /* 隱藏滾動條但保留滾動功能 */
 ::-webkit-scrollbar {
     display: none; /* 隱藏滾動條 */
+}
+
+/*CV區域*/
+.cv{
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    padding: 5%;
+    /*最大寬度為90%*/
+    max-width: 90%;
+    margin: 0 auto;/*容器水平置中*/
+}
+
+.work,.school,.skill{
+    background-color: white;
+    padding: 10%;
+}
+
+/*CV標題*/
+.cv-h1{
+    padding: 1%;
+    background-color: rgb(235, 235, 235);
+}
+
+small{
+    font-weight: 30; /* 設置字體為細體 */
+    vertical-align: text-top;/*向上對齊*/
+}
+
+/*下拉式選單區-WORK*/
+.item-1,.item-2,.item-3,.item-4 {
+    cursor: pointer;
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    border: 1px solid #ccc;
+    background-color: white;
+    padding: 5%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.show{
+    display: block;
+}
+
+.jd{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+}
+
+.jdp1{
+    background-color: #f2f2f2;
+    padding: 1.5em;
+    text-align: justify;
+}
+
+/*在校經歷*/
+table{
+    font-family: sans-serif,Verdana, Geneva, Tahoma;
+    vertical-align: top;
+    width: 100%;
+}
+
+td{
+    width: 50%;
+    padding: 2%;
+}
+
+.t0{
+    color: rgb(236, 236, 236);
+    width: 5px;
+    background-color: rgb(148, 148, 148);
+}
+
+.t1{
+    font-weight: bold;/*粗體*/
+    color: #000000;
+    background-color: rgb(236, 236, 236);
+}
+
+.t2{
+    letter-spacing: -0.5px; /* 設置字體間距為 2 像素 */
+    background-color: rgb(243, 243, 243);
+}
+
+/*Skill*/
+.skillmenu{
+    display: flex;
+    justify-content: center; /*水平置中*/
+}
+
+.photoshop,.illustrator,.lightroom,.Premiere,.AfterEffects{
+    align-items: center;/*水平置中*/
+    width: 80px;
+    padding-top: 5%;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-bottom: 1%;
+}
+
+.skillfont{
+    display: flex;
+    max-width: 100%;
+    justify-content: space-between; /* 元素間平均分布 */
+}
+
+.sf1,.sf2,.sf3,.sf4,.sf5{
+    text-align: center;
+    width: 80px;
+    font-size: 5%;
+    padding-top: 0;
+    padding-right: 5%;
+    padding-left: 5%;
 }
